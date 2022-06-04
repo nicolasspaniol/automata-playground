@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: max-content auto;
+  overflow: hidden;
+}
+
+#cnv-container {
+  height: 100vh;
+  display: flex;
+  background-color: #666;
+  overflow: auto;
+}
+
+#cnv {
+  margin: auto;
+  outline: 2px solid white;
+  
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+}
+
+#options {
+  box-sizing: border-box;
+  
+  padding: 15px;
+  background-color: white;
+  font-family: Arial;
+
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 75px 200px;
+  grid-auto-rows: 22px;
+  
+  align-items: center;
+  justify-items: right;
+}
+
+#options > * {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#options > div {
+  display: flex;
+  gap: 10px;
+}
+#options > div > * {
+  width: 50%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cellular Automata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loop()">
+  <div id="options">
+    Scaling
+    <input type="range" id="scale" value="5" min="1" max="20" step="1" autocomplete="off">
+    Resolution
+    <input type="number" id="resolution" value="100" min="50" max="500" autocomplete="off">
+    Speed
+    <input type="range" id="speed" value="50" min="30" max="59" step="1" autocomplete="off">
+    Simulation
+    <input type="button" value="Play" id="play">
+    Drawing
+    <input type="button" value="Clear" id="clear">
+    Automata
+    <select id="automatas"></select>
+    Colors
+    <div>
+      <input type="number" min="0" id="color-l" title="Left mouse button" autocomplete="off">
+      <input type="number" min="0" id="color-r" title="Right mouse button" autocomplete="off">
+    </div>
+  </div>
+
+  <div id="cnv-container">
+    <canvas id="cnv"></canvas>
+  </div>
+
+  <script src="code.js"></script>
+  <script src="automata.js"></script>
+  <script src="input.js"></script>
+
+  <script src="start.js"></script>
+</body>
+</html>
